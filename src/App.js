@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import image from "./images/kindpng_262500.png";
+import eye from "./images/eye.png";
+import { useEffect, useRef, useState } from "react";
+import {eyeCoords} from './constants'
+import Rick from "./Rick";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="container">
+      <Rick />
+      <div className="ul-wrapper">
+      <ul>
+        <li>Verkefni 1</li>
+        <li>Verkefni 2</li>
+        <li>Verkefni 3</li>
+        <li>Verkefni 4</li>
+        <li>Verkefni 5</li>
+        <li>Verkefni 6</li>
+        <li>Verkefni 7</li>
+        <li>Verkefni 8</li>
+        <li>Verkefni 9</li>
+      </ul>
+      </div>
+
     </div>
+    </>
   );
 }
 

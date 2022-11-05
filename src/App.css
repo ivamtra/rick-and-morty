@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+html {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rick-image {
+  max-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.morty-left-eye {
+  position: absolute;
+  width: 50px;
+  left: 212px;
+  bottom: 237px;
+}
+
+.morty-right-eye {
+  position: absolute;
+  width: 50px;
+  left: 323px;
+  bottom: 258px;
+}
+
+.rick-left-eye {
+  position: absolute;
+  width: 52px;
+  left: 466px;
+  bottom: 473px;
+}
+
+.rick-right-eye {
+  position: absolute;
+  width: 52px;
+  left: 570px;
+  bottom: 479px;
+}
+
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+ul {
   color: white;
+  list-style-type: none;
+  font-size: 1.75em;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin-bottom: 1em;
+  background-color: #404040;
+  padding: 0.3em;
+  border-radius: 7px;
+  color: #2feb61;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ul-wrapper {
+  padding: 0em 5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+li:hover {
+  background-color: #2feb61;
+  color: #404040;
+  cursor:pointer;
 }
